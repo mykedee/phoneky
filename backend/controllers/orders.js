@@ -12,11 +12,11 @@ exports.payStackPay = async (req, res) => {
   const response = await axios.post(
     "https://api.paystack.co/transaction/initialize",
     {
-      email:email,
+      email: email,
       amount: amount * 100,
-      channels: ["card", "bank_transfer"],
+      // channels: ["card", "bank_transfer"],
       metadata: {
-        cancel_action: "http://localhost:3000/checkout",
+        cancel_action: "phoneky.onrender.com/checkout",
       },
     },
     {
