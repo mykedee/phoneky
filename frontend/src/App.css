@@ -1,0 +1,323 @@
+* {
+  @apply m-0 p-0 box-border;
+}
+
+::-webkit-scrollbar {
+  @apply w-1 h-1;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply rounded-lg
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-50 rounded-lg;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-200 rounded-lg;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-slate-700;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500 rounded-lg;
+}
+
+.dark {
+  @apply bg-gray-800 text-zinc-50;
+}
+.dark svg {
+  @apply text-zinc-50;
+}
+
+#dark-white svg {
+  @apply text-white;
+}
+
+.ql-toolbar.ql-snow {
+  @apply bg-white;
+}
+
+.dash-input-field {
+  @apply text-slate-800 dark:text-slate-50 bg-white  dark:bg-slate-700;
+}
+
+.ql-editor.ql-blank::before {
+  @apply text-slate-600 dark:text-slate-50;
+}
+
+
+.light svg {
+  @apply text-slate-950;
+}
+
+.dark svg {
+  @apply text-zinc-50;
+}
+.dark .active svg:hover {
+  @apply text-slate-950;
+}
+
+.active svg {
+  @apply dark:text-slate-950;
+}
+.active:hover svg:hover {
+  @apply dark:text-slate-950;
+}
+
+.active {
+  @apply flex items-center p-3 mx-3 hover:bg-main-btn-color bg-main-btn-hover text-zinc-50 hover:text-zinc-50 dark:hover:bg-primary-orange hover:mx-3 rounded dark:bg-primary-orange dark:text-slate-950;
+}
+
+.link {
+  @apply flex items-center p-3 mx-3 my-2 hover:bg-main-btn-color hover:text-zinc-50 dark:hover:bg-primary-orange hover:mx-3 rounded dark:hover:text-zinc-50;
+}
+
+.product-image-card img {
+  @apply h-[136px] md:h-[221px] lg:h-52 w-full rounded-lg object-contain !border-primary-orange;
+}
+
+body {
+  background-color: #f1f5f9;
+  font-size: 15px;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.open {
+  @apply block h-[100vh] bg-white right-0 left-0 absolute top-16 z-10;
+}
+
+.open ul {
+  display: block;
+}
+
+.cat-nav a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.cat-nav a {
+  @apply hover:text-primary-green;
+}
+
+.cartIcon {
+  @apply text-xl md:text-base;
+}
+
+.swiper-wrapper {
+  width: 100% !important;
+  max-width: 1000px !important;
+}
+
+.swiper-wrapper {
+  @apply w-full max-w-[100px] lg:max-w-[10/12];
+}
+
+.swiper-wrapper img {
+  @apply object-contain min-w-[100%] lg:w-full md:min-w-[100%] lg:min-w-[1000px] bg-white lg:max-h-[339px] h-full max-h-[340px];
+}
+
+.featured-card {
+  @apply !object-none md:object-cover;
+}
+
+.input-label {
+  @apply block mb-1 font-semibold text-sm text-slate-500 dark:text-slate-200;
+}
+
+.open ul > a {
+  margin: 4.2%;
+  padding: 16px 0;
+  display: block;
+  margin-top: 32px;
+}
+
+.mobile-nav-span {
+  height: 2px;
+  width: 20px;
+  display: block;
+  margin-top: 6px;
+  background-color: #fff;
+}
+
+.mobile-nav-span:first-child {
+  margin-top: 0px;
+}
+
+.hamburger {
+  transform: rotate(45deg);
+  transition: 0.5s ease-out;
+}
+
+.hamburger span:last-child {
+  transform: rotate(-90deg);
+  bottom: 0;
+  position: absolute;
+  transition: 0.5s ease-out;
+}
+
+.hamburger span:nth-child(2) {
+  display: none;
+}
+
+.noneHam {
+  transition: 0.5s ease-out;
+  top: -4px;
+  position: relative;
+}
+
+.noneHam span:last-child {
+  position: absolute;
+  transition: 0.5s ease-out;
+}
+
+.noneHam span:nth-child(2) {
+  display: block;
+}
+
+.container-fluid {
+  padding: 0 10px;
+}
+
+.footer-area h6 {
+  font-size: 14px;
+}
+
+.post,
+.card-title,
+.card-title a {
+  color: #444 !important;
+  text-decoration: none !important;
+  text-transform: lowercase;
+}
+
+.card-title::first-letter {
+  text-transform: uppercase;
+}
+
+.post,
+.card-title,
+.card-title a:hover {
+  color: #004d0c;
+  text-decoration: underline;
+}
+
+.hero h1 {
+  @apply text-4xl font-bold md:text-4xl lg:text-6xl;
+}
+
+.welcome h1 {
+  @apply text-slate-950;
+}
+
+.commitment .swiper-slide {
+  height: 100%;
+}
+
+.featured-card .swiper-button-prev:after,
+.featured-card .swiper-button-next:after {
+  font-size: 15px !important;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 12px 16px;
+}
+
+.featured-card .swiper-button-prev:hover:after,
+.featured-card .swiper-button-next:hover:after {
+  font-size: 15px !important;
+  background-color: #fbc50b;
+  border: transparent;
+  border-radius: 50%;
+  padding: 12px 16px;
+}
+
+.featured-card .swiper-pagination-bullet-active,
+.swiper-pagination-bullet {
+  background-color: #000000 !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 25px;
+  opacity: 0.5;
+}
+
+.featured-card .slider-text {
+  @apply absolute top-1/2 left-1/2 z-10 -translate-y-1/2 -translate-x-1/2 text-center lg:w-5/6 w-4/5;
+}
+
+.featured-card .swiper-button-next,
+.featured-card .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 10px) !important;
+  left: auto;
+}
+
+.featured-card .swiper-button-prev,
+.featured-card .swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 10px) !important;
+  right: auto;
+}
+
+.featured-card .slider-button:hover {
+  background-color: #009a4e;
+}
+
+.cardOpen {
+  @apply block relative;
+}
+
+.cardClose {
+  @apply hidden lg:block relative;
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    margin-left: 225px;
+    width: calc(100% - 225px);
+    position: absolute;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 60px) !important;
+    left: auto;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 60px) !important;
+    right: auto;
+  }
+}
+
+.home-card .swiper-button-prev:after,
+.home-card .swiper-button-next:after {
+  font-size: 15px !important;
+  background-color: #fbc50b;
+  border-radius: 50%;
+  padding: 10px 14px;
+  z-index: 50;
+  color: #fff;
+}
+
+.home-card .swiper-button-prev:hover:after,
+.home-card .swiper-button-next:hover:after {
+  font-size: 15px !important;
+  background-color: #fbc50b;
+  border: transparent;
+  border-radius: 50%;
+  padding: 10px 14px;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.6 !important;
+}
+
